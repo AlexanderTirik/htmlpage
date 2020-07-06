@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  z-index: 100;
+  left:0;
+  top:0;
+  width: 100%;
+  background-color: #dbe2ef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.title-links {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 50px;
+  cursor: pointer;
+}
+
+#bell {
+  cursor: pointer;
+  margin-right: 20px;
+  background: none;
+  border: none;
+  font-size: large;
+}
+
+#bell:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+#acc-ico {
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+#acc-ico:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#acc-btn {
+  display: none;
+}
+
+#acc-btn:checked + label > .acc-menu {
+  display: flex;
+}

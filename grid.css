@@ -1,0 +1,121 @@
+#grid {
+  margin-top: 100px;
+  padding: 1px 10%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 20%);
+  grid-template-areas:
+    "tesla tesla spaceX spaceX contacts"
+    "tesla tesla boring boring contacts"
+    "neura neura neura ai ai";
+}
+.grid-logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+.back {
+  position: absolute;
+  overflow: hidden;
+}
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.back,
+.front,
+.card {
+  height: 100%;
+  width: 100%;
+}
+
+.grid-elem:hover .rotateX {
+  transform: rotateX(180deg);
+}
+.rotateX > .back {
+  transform: rotateX(180deg);
+}
+.grid-elem:hover .rotateY {
+  transform: rotateY(180deg);
+}
+.rotateY > .back {
+  transform: rotateY(180deg);
+}
+
+.grid-elem {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tesla {
+  grid-area: tesla;
+  background-color: #ffc1c1;
+}
+
+#spaceX {
+  grid-area: spaceX;
+  background-color: #b0aeeb;
+}
+
+#theboringcompany {
+  grid-area: boring;
+  background-color: #ebdc9c;
+}
+#openai {
+  grid-area: ai;
+  background-color: #eab1e5;
+}
+#neuralink {
+  grid-area: neura;
+  background-color: #ace8eb;
+}
+#contacts {
+  grid-area: contacts;
+  background-color: #c4f0bf;
+  font-size: 25px;
+}
+#contacts .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-btn {
+  font-size: 20px;
+  background: none;
+  color: #3e7038;
+  border: 2px solid #3e7038;
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+#contact-btn:hover {
+  background-color: #3e7038;
+  color: #c4f0bf;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 992px) {
+  #grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 20%);
+    grid-template-areas:
+      "spaceX spaceX tesla"
+      "neura neura neura"
+      "boring boring ai"
+      "boring boring contacts";
+  }
+}

@@ -1,0 +1,43 @@
+.notif-wrp {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notif-ico{
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.notification{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.notif-text{
+    display: flex;
+    font-size: 1.1em;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.notif-name{
+    font-weight: bold;
+}
+
+.error {
+  background-color: rgba(237,41,57,0.8);
+}
+.warning {
+  background-color: rgba(255,211,0,0.8);
+}
+.success {
+  background-color: rgba(50,205,50,0.8);
+}

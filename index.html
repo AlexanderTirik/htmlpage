@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm Elon</title>
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="title.css" />
+    <link rel="stylesheet" href="accountMenu.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="notifications.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <header class="swing-in-top-fwd">
+      <img id="logo" src="./public/Elon_logo.png" />
+      <div class="title-links">
+        <button id="bell">&#128276;</button>
+        <input type="checkbox" id="acc-btn" />
+        <label for="acc-btn">
+          <img id="acc-ico" src="./public/E_logo.png" />
+          <div class="acc-menu">
+            <span id="username">Elon Musk</span>
+            <div class="menu-btn-wrp">
+              <button class="menu-btn">Profile</button>
+              <button class="menu-btn">Log Out</button>
+            </div>
+          </div>
+        </label>
+      </div>
+    </header>
+
+    <div id="grid">
+      <div id="tesla" class="grid-elem">
+        <div class="card rotateX">
+          <div class="grid-info back">
+            Tesla — американская компания, производитель электромобилей и
+            решений для хранения электрической энергии.
+          </div>
+          <div class="front">
+            <img src="./public/Tesla_logo.png" class="grid-logo" />
+          </div>
+        </div>
+      </div>
+      <div id="spaceX" class="grid-elem">
+        <div class="card rotateY">
+          <div class="back">
+            <span class="grid-info">
+              Space Exploration Technologies Corporation — американская
+              компания, производитель космической техники. Штаб-квартира — в
+              городе Хоторн, Калифорния, США.
+            </span>
+          </div>
+          <div class="front">
+            <img src="./public/SpaceX_logo.png" class="grid-logo" />
+          </div>
+        </div>
+      </div>
+      <div id="theboringcompany" class="grid-elem">
+        <div class="card rotateX">
+          <div class="grid-info back">
+            The Boring Company компания по строительству тоннелей, основанная
+            Илоном Маском в декабре 2016 года.
+          </div>
+          <div class="front">
+            <img src="./public/The-Boring-Company_logo.png" class="grid-logo" />
+          </div>
+        </div>
+      </div>
+      <div id="openai" class="grid-elem">
+        <div class="card rotateY">
+          <div class="grid-info back">
+            OpenAI — некоммерческая исследовательская компания из Сан-Франциско,
+            занимающаяся искусственным интеллектом. Цель компании — развивать
+            открытый, дружественный ИИ.
+          </div>
+          <div class="front">
+            <img src="./public/openAI_logo.png" class="grid-logo" />
+          </div>
+        </div>
+      </div>
+      <div id="neuralink" class="grid-elem">
+        <div class="card rotateX">
+          <div class="grid-info back">
+            Neuralink — американская нейротехнологическая компания, основанная
+            Илоном Маском, планирующая заниматься разработкой и производством
+            имплантируемых нейрокомпьютерных интерфейсов. 
+          </div>
+          <div class="front">
+            <img src="./public/Neuralink_Logo.png" class="grid-logo" />
+          </div>
+        </div>
+      </div>
+      <div id="contacts" class="grid-elem">
+        <div class="card rotateY">
+          <div class="back">
+            <button id="contact-btn">Get my contacts</button>
+          </div>
+          <div class="front">
+            CONTACTS
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="notif-wrp">
+      <div class="notification error">
+        <img class="notif-ico" src="./public/errorIco.png" />
+        <div class="notif-text">
+          <span class="notif-name"> Error </span>
+          <span class="notif-desc"> New Tesla failed crash test </span>
+        </div>
+      </div>
+      <div class="notification success">
+        <img class="notif-ico" src="./public/successIco.png" />
+        <div class="notif-text">
+          <span class="notif-name"> Success </span>
+          <span class="notif-desc"> Falcon 9 successfully took off </span>
+        </div>
+      </div>
+      <div class="notification warning">
+        <img class="notif-ico" src="./public/warningIco.png" />
+        <div class="notif-text">
+          <span class="notif-name"> Warning </span>
+          <span class="notif-desc"> Stock price plummeting </span>
+        </div>
+      </div>
+    </div>
+    <footer>Powered by SpaceX &#128640; (с)</footer>
+  </body>
+</html>
